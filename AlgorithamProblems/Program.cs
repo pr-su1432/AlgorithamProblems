@@ -4,18 +4,19 @@ namespace AlgorithamProblems
 {
     class program
     {
+       
+
         public static void Main(String[] args)
         {
-            String s;
-            String answer = "";
-
-            Console.Write("Enter the string: ");
-            s = Console.ReadLine();
-
-            Console.Write("\nAll possible strings are : ");
-            Permutations value = new Permutations();
-            value.Permute(s, answer);
-            
+            Mergesorting ob = new Mergesorting();
+            int[] arr = { 12, 11, 13, 5, 6, 7 };
+            Console.WriteLine("Given Array");
+            ob.sort(arr, 0, arr.Length - 1);
+            Console.WriteLine("\nSorted array");
+            ob.printArray(arr);
         }
+
+        
     }
 }
+
