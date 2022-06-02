@@ -4,16 +4,20 @@ namespace AlgorithamProblems
 {
     class program
     {
-       
-
+      
         public static void Main(String[] args)
         {
-            Mergesorting ob = new Mergesorting();
-            int[] arr = { 12, 11, 13, 5, 6, 7 };
-            Console.WriteLine("Given Array");
-            ob.sort(arr, 0, arr.Length - 1);
-            Console.WriteLine("\nSorted array");
-            ob.printArray(arr);
+
+            string[] names = { "prasanna lakshmi", "lakshmi prasanna", "vara lakshmi", "lakshmi vara" };
+            AlgorithamProblems.InsertSort value = new AlgorithamProblems.InsertSort();
+            value.InsertionSort(names);
+            foreach (var item in names)
+            {
+                Console.WriteLine(item);
+            }
+
+
+
         }
 
         
