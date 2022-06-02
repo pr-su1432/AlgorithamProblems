@@ -4,31 +4,26 @@ namespace AlgorithamProblems
 {
     class program
     {
-   
 
-        static void Main(String[] args)
+        public static void Main(String[] args)
         {
-            string firstString, secondString;
-            //Gets words from user.  
-            Console.WriteLine("Enter first string");
-            firstString = Console.ReadLine();
-            Console.WriteLine("Enter second string");
-            secondString = Console.ReadLine();
-            AnagaramSort anagram = new AnagaramSort();
-            //Check if words are anagram  
-            if (anagram.Anagram(firstString, secondString) == true)
-            {
-                Console.WriteLine("Both string are anagram string.");
-            }
+            String[] input = { "prasanna", "arjun", "abhi", "soniya" };
+            String find = "arjun";
+            AlgorithamProblems.BinarySearch example = new AlgorithamProblems.BinarySearch();
+            int result = example.binarySearch(input, find);
+
+            if (result == -1)
+                Console.WriteLine("Element not present");
             else
-            {
-                Console.WriteLine("Both string are not anagram string.");
-            }
-            Console.ReadLine();
-
-
+                Console.WriteLine("Element found at " + "index " + result);
         }
+
     }
-    
+
+
+
 }
+
+    
+
 
